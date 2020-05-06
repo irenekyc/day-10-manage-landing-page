@@ -1,0 +1,43 @@
+footer{
+    background: $main-dark;
+    color:white;
+    a{
+        color: white;
+    }
+    .subscription-div{
+        form{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            input[type="email"]{
+                width: 240px;
+                height: 40px;
+                padding: 5px 10px;
+                border-radius: 24px;
+            }
+            .btn{
+                height:40px;
+            }
+        }
+    }
+
+    .footer-nav-links{
+        display:flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        li{
+            margin:1rem 0;
+            font-size:0.8rem;
+        }
+
+    }
+    .logo{
+        text-align:center;
+        margin-bottom:1rem;
+    }
+    p{
+        text-align:center;
+        font-size:0.8rem;
+    }
+}

@@ -1,0 +1,32 @@
+.features{
+    text-align:center;
+
+    .feature{
+        padding-left:1.5rem;
+        .feature-title{
+          
+            background: $main-light-red;
+            height: 35px;
+            display:flex;
+            align-items: center;
+            .feature-id{
+                width:18%;
+                border-radius: 20px;
+                background: $primary-red;
+                color:white;
+                line-height: 35px;
+                margin-left:-0.5rem;
+            }
+            .feature-name{
+                flex:1;
+                text-align: left;
+                margin-left:0.5rem;
+            }
+        }
+        .feature-copy{
+            padding-left:-0.5rem;
+            text-align: left;
+        }
+    }
+   
+}

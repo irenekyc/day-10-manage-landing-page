@@ -1,0 +1,58 @@
+.wrapper{
+    padding: 0 4%;
+}
+.wrapper-narrow{
+    padding: 0 8%
+}
+
+@for $i from 1 through 10{
+    .py-#{$i}{ padding: 1rem*$i 0;}
+}
+@for $i from 1 through 10{
+    .px-#{$i}{ padding:  0 1rem*$i;}
+}
+@for $i from 1 through 10{
+    .p-#{$i}{ padding: 1rem*$i;}
+}
+@for $i from 1 through 10{
+    .my-#{$i}{ margin :1rem*$i 0;}
+}
+
+.heading-text{
+    color: $main-dark;
+}
+
+.x-large{
+    font-size:2.2rem;
+}
+.large{
+    font-size:1.6rem;
+}
+
+.lh-2{
+    line-height:2;
+}
+
+//BUTTON
+.btn{
+    cursor: pointer;
+
+    &.btn-primary-red{
+        background: $primary-red;
+        color:white;
+        padding: 12px 24px;
+        border-radius: 18px;
+    }
+    &.btn-center{
+        width:130px;
+        font-size:0.8rem;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius: 25px;
+    }
+    &.btn-white{
+        background: white;
+        color: $primary-red;
+        padding: 12px 24px;
+    }
+}
