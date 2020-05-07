@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Manage landing page</title>
+
+</head>
+<body>
+  <header>
+
+    <nav>
+      <img src="images/logo.svg">
+      <div class="hamburger show-sm" id="open-menu-div"><img src="images/icon-hamburger.svg" alt="" id="open-menu"></div>
+      <div class="hide-originally show-sm" id="close-menu-div"><img src="images/icon-close.svg" id="close-menu"></div>
+      <div class="nav-links hide-originally" id="nav-links">
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="hide-sm"><button class="btn btn-primary-red"> Get Started</button></div>
+    </nav>
+
+    <section class="intro my-2 p-2">
+      <div class="intro-image">
+        <img src="images/illustration-intro.svg">
+      </div>
+      <div class="intro-text py-2">
+        <h1 class="heading-text x-large my-1"> Bring everyone together to build better products. </h1>
+        <p class="lh-2 my-1"> Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+        <button class="btn btn-primary-red my-1"> Get Started</button>
+      </div>
+    </section>
+
+  </header>
+
+  <section class="features">
+    <div class="section-title">
+    <h1 class="px-2 heading-text large">  What’s different about Manage? </h1>
+    <p class="p-2 lh-2">
+      Manage provides all the functionality your team needs, without 
+      the complexity. Our software is tailor-made for modern digital 
+      product teams. 
+     </p>
+    </div>
+    <div class="features-container">
+      <div class="feature my-2">
+        <div class="feature-title">
+          <div class="feature-id">  01</div>
+          <div class="feature-name heading-text"><strong> Track company-wide progress</strong></div>
+        </div>
+        <div class="feature-copy my-1">
+          <p class="lh-2">
+          See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+        </div>
+      </div>
+      <div class="feature my-2">
+        <div class="feature-title">
+          <div class="feature-id">  02</div>
+          <div class="feature-name heading-text"><strong> Advanced built-in reports</strong></div>
+        </div>
+        <div class="feature-copy my-1">
+          <p class="lh-2">
+           Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.
+        </p>
+        </div>
+      </div>
+      <div class="feature my-2">
+        <div class="feature-title">
+          <div class="feature-id">  03</div>
+          <div class="feature-name heading-text"><strong> Everything you need in one place</strong></div>
+        </div>
+        <div class="feature-copy my-1">
+          <p class="lh-2">
+            Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonies py-3">
+    <div class="section-title my-1">
+      <h1 class="heading-text large">  What they’ve said</h1>
+    </div>
+    <div class="testimonies-container p-1">
+      <input type="radio" name="user" id="user1" checked>
+      <input type="radio" name="user" id="user2">
+      <input type="radio" name="user"  id="user3">
+      <input type="radio" name="user"  id="user4">
+      <div class="user-slides">
+          <div class="user">
+            <img class="user-picture" src="images/avatar-anisha.png">
+            <p class="user-name heading-text"><strong>Anisha Li</strong> </p>
+            <p class="user-experience lh-2"> “Manage has supercharged our team’s workflow. The ability to maintain 
+              visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </div>
+          <div class="user">
+            <img class="user-picture" src="images/avatar-ali.png">
+            <p class="user-name heading-text"><strong>  Ali Bravo</strong> </p>
+            <p class="user-experience lh-2">   “We have been able to cancel so many other subscriptions since using 
+              Manage. There is no more cross-channel confusion and everyone is much 
+              more focused.”
+            </p>
+          </div>
+          <div class="user">
+            <img class="user-picture" src="images/avatar-richard.png">
+            <p class="user-name heading-text"><strong>  Richard Watts</strong> </p>
+            <p class="user-experience lh-2">
+              “Manage allows us to provide structure and process. It keeps us organized 
+              and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+          <div class="user">
+            <img class="user-picture" src="images/avatar-shanai.png">
+            <p class="user-name heading-text"><strong>  Shanai Gough</strong> </p>
+            <p class="user-experience lh-2"> 
+              “Their software allows us to track, manage and collaborate on our projects 
+              from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
+      </div>
+      <div class="user-slides-button">
+        <label for="user1"></label>
+        <label for="user2"></label>
+        <label for="user3"></label>
+        <label for="user4"></label>
+
+      </div>
+    </div>
+
+    <button class="btn btn-primary-red btn-center">Get Started</button>
+
+  </section>
+
+  <section class="call-to-action">
+    <h1 class="x-large">Simplify how your team works today. </h1>
+    <button class="btn btn-white btn-center">Get Started</button>
+  </section>
+
+  <footer class="py-3">
+    <div class="subscription-div px-2">
+      <form>
+        <input type="email" name="email" placeholder="Updates in your inbox...">
+        <button class="btn btn-primary-red" type="submit"> Go</button>
+      </form>
+    </div>
+    <div class="footer-nav-links p-1">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>Products</a></li>
+        <li><a>About Us</a></li>
+      </ul>
+      <ul>
+        <li><a>Careers</a></li>
+        <li><a>Community</a></li>
+        <li><a>Privacy Policy</a></li>
+      </ul>
+    </div>
+  <div class="social-media my-2">
+    <a href="#"><img src="images/icon-facebook.svg"></a>
+    <a href="#"><img src="images/icon-youtube.svg"></a>
+    <a href="#"><img src="images/icon-twitter.svg"></a>
+    <a href="#"><img src="images/icon-pinterest.svg"></a>
+    <a href="#"><img src="images/icon-instagram.svg"></a>
+  </div>
+   <div class="logo"><img src="images/logo_white.svg"></div>
+   <p>Copyright 2020. All Rights Reserved</p>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Irene K</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
