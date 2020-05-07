@@ -84,4 +84,84 @@
             background: $primary-red;
         }
     }
+
+    @media (min-width: 900px){
+        .user-slides{
+            width: 2800px;
+            justify-content: space-around;
+            padding: 0 5rem;
+        }
+        .user{
+            width:550px;
+        }
+        #user1:checked {
+            ~.user-slides{
+            margin-left:100px;}
+            ~.user-slides-button label:first-child{
+                background: $primary-red;
+            }
+        }
+        
+        #user2:checked {
+            ~.user-slides{
+            margin-left:-550px;}
+            ~.user-slides-button label:nth-child(2){
+                background: $primary-red;
+            }
+        }
+        #user3:checked{
+            ~.user-slides{
+            margin-left:-1250px;}
+            ~.user-slides-button label:nth-child(3){
+                background: $primary-red;
+            }
+        }
+        #user4:checked {
+            ~.user-slides{
+            margin-left:-1900px;}
+            ~.user-slides-button label:nth-child(4){
+                background: $primary-red;
+            }
+        }
+    }
+    @media (min-width:1439px){
+        .user-slides{
+            width: 2800px;
+            justify-content: space-around;
+            padding: 0 5rem;
+        }
+        .user{
+            width:550px;
+        }
+        #user1:checked {
+            ~.user-slides{
+            margin-left:300px;}
+            ~.user-slides-button label:first-child{
+                background: $primary-red;
+            }
+        }
+        
+        #user2:checked {
+            ~.user-slides{
+            margin-left:-350px;}
+            ~.user-slides-button label:nth-child(2){
+                background: $primary-red;
+            }
+        }
+        #user3:checked{
+            ~.user-slides{
+            margin-left:-1020px;}
+            ~.user-slides-button label:nth-child(3){
+                background: $primary-red;
+            }
+        }
+        #user4:checked {
+            ~.user-slides{
+            margin-left:-1680px;}
+            ~.user-slides-button label:nth-child(4){
+                background: $primary-red;
+            }
+        }
+
+    }
 }

@@ -19,3 +19,13 @@ navbar.addEventListener('click', (e)=>{
         } 
     }
 })
+
+window.addEventListener('scroll', ()=>{
+    if (window.scrollY > 70) {
+        navbar.classList.add("navbar-white")
+      } else {
+        navbar.classList.remove("navbar-white")
+      }
+})
+
+

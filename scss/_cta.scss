@@ -12,4 +12,31 @@
         margin-top:3rem;
         margin-bottom:3rem;
     }
+    @media (min-width:900px){
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            width:60%;
+            padding: 2rem;
+            // padding-right:10rem;
+            text-align: left;
+            margin-top:0;
+        }
+        button{
+            margin-top:0;
+            margin-bottom:0;
+            width: 140px;
+        }
+    }
+    @media (min-width:1439px){
+        h1{
+        
+            padding: 2rem 5rem;
+            padding-right:10rem;
+       
+        }
+        
+    }
 }

@@ -5,23 +5,27 @@ footer{
         color: white;
     }
     .subscription-div{
+        grid-area: subscription;
         form{
             display:flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             input[type="email"]{
-                width: 240px;
+                width: 70%;
+                max-width:500px;
                 height: 40px;
                 padding: 5px 10px;
                 border-radius: 24px;
             }
             .btn{
                 height:40px;
+            
             }
         }
     }
 
     .footer-nav-links{
+        grid-area: navlinks;
         display:flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -33,11 +37,51 @@ footer{
 
     }
     .logo{
+        grid-area: logo;
         text-align:center;
         margin-bottom:1rem;
     }
     p{
+        grid-area: copyright;
         text-align:center;
         font-size:0.8rem;
     }
-}
+    .social-media{
+        grid-area: socialmedia;
+        width:250px;
+        margin-right:auto;
+        margin-left:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width:900px){
+        padding: 4rem;
+        display:grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas: "logo navlinks subscription"
+                             "socialmedia socialmedia copyright";
+        .logo, .social-media, .subscription-div, .footer-nav-links{
+            margin:0;
+            padding:0;
+        }
+         text-align:left;
+        }
+        .footer-nav-links ul li{
+            margin-top:0;
+
+        }
+        .social-media, .logo{
+            padding-left:4rem;
+            text-align: left;;
+        }
+        p{
+            text-align: right;
+            padding-right:4rem;
+        }
+        .subscription-div{
+            
+            padding-right:4rem;
+        }
+    }

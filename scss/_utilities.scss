@@ -1,3 +1,15 @@
+.hide-sm{
+    display:none;
+}
+
+@media (min-width: 767px){
+    .show-sm, .hamburger{
+        display:none;
+    }
+    .hide-sm{
+        display: inline-block;
+    }
+}
 .wrapper{
     padding: 0 4%;
 }
@@ -19,18 +31,28 @@
 }
 
 .heading-text{
-    color: $main-dark;
+    color:$main-dark;
 }
 
 .x-large{
     font-size:2.2rem;
 }
+
 .large{
     font-size:1.6rem;
 }
 
 .lh-2{
     line-height:2;
+}
+
+@media (min-width:1023px){
+    .x-large{
+        font-size: 4rem;
+    }
+    .large{
+        font-size:2rem;
+    }
 }
 
 //BUTTON

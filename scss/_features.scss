@@ -1,6 +1,5 @@
 .features{
     text-align:center;
-
     .feature{
         padding-left:1.5rem;
         .feature-title{
@@ -28,5 +27,39 @@
             text-align: left;
         }
     }
-   
+    @media (min-width: 900px){
+        text-align:left;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .section-title{
+            width:50%;
+            text-align: left;
+            padding: 2rem;
+
+            h1{
+                padding-right: 2rem;
+            }  
+            p{
+                padding-right: 6rem;
+            }
+        }
+        .features-container{
+            width:50%;
+            .feature{
+                .feature-title{
+                    background: white;
+                }
+                .feature-id{
+                    width:66px;
+                    text-align: center;
+
+                }
+                .feature-copy{
+                    padding-right:2rem;
+                }
+            }
+            
+        }
+    }
 }
